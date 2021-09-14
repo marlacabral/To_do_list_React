@@ -1,9 +1,12 @@
 @import '../../styles/_colors.scss';
 @import '../../styles/style.scss';
 
+
+
 .content {
   @include container;
   flex: 1;
+  color: $color-primary;
   &-title {
     color: $color-primary;
     font-size: 16px;
@@ -12,5 +15,34 @@
   }
   &-list {
     
-  }
+  }}
+
+.circulo1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #0b78f5, #d106ec);
+  position: absolute;
+  transform: translateX(80px) rotate(35deg);
+  margin: 0 10px ;
+  margin: 0 auto;
+  opacity: 0.5;
+	backface-visibility: hidden;
+  top: 60%;
+  left: 60%;
 }
+
+.circulo3 {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #0b78f5, #d106ec);
+  position: absolute;
+  transform: translateX(80px) rotate(35deg);
+  opacity: 0.75;
+	backface-visibility: hidden;
+  top: 100px;
+  left: 40px;
+
+}
+
