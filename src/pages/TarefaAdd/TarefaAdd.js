@@ -5,7 +5,6 @@ import { Api } from '../../api/api'
 const TarefaAdd = () => {
   const handleSubmit = async (evento) => {
     evento.preventDefault();
-    console.log(evento.target.nome.value);
     const titulo = evento.target.titulo.value;
     const descricao = evento.target.descricao.value;
     const prioridade = evento.target.prioridade.value;

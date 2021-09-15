@@ -5,23 +5,27 @@
 .view {
   @include container;
   height: 100%;
+  width: 100%;
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin-top: 5%;
-  &-img {
-    width: 48%;
-    img {
-      width: 100%;
-      height: auto;
-    }
-  }
+  align-items: center;  
+  justify-content: center;
+  
+ 
+  
   &-info {
-    width: 48%;
+    width: 50%;
     &-text {
-      font-size: 20px;
-      line-height: 25px;
-      color: $color-primary;
+      
+      size:70px; 
+      line-height: 100%;
+      color: black;
     }
   }
+    .btnbtn-success{
+       background: white;
+       border-radius: 50%;
+       box-shadow: solid black;
+      
+     }
+  
 }

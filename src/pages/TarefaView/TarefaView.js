@@ -17,20 +17,19 @@ const TarefaView = (props) => {
     const response = await Api.fetchGetById(id);
     const data = await response.json();
     setTarefa(data);
-    console.log(tarefa);
+  
   }
 
   return (
     <section className="view">
-      <div className="view-img">
-        <img src={tarefa.capa} alt={tarefa.nome}/>
-      </div>
+      
       <div className="view-info">
-        <p className="view-info-text"><b>Nome:</b> { tarefa.nome }</p>
-        <p className="view-info-text"><b>Autor:</b> { tarefa.autor }</p>
-        <p className="view-info-text"><b>Letra:</b> { tarefa.letra }</p>
-        <p className="view-info-text"><b>Duracao:</b> { tarefa.duracao }</p>
-        <p className="view-info-text"><b>Data Criacao:</b> { tarefa.dataCriacao }</p>
+        <p className="view-info-text"><b>Titulo:</b> { tarefa.titulo }</p>
+        <p className="view-info-text"><b>Descrição:</b> { tarefa.descricao }</p>
+        <p className="view-info-text"><b>Prioridade:</b> { tarefa.prioridade }</p>
+        <p className="view-info-text"><b>Status:</b> { tarefa.status }</p>
+        <p className="view-info-text"><b>Prazo:</b> { tarefa.prazo }</p>
+        
         <button className="btn btn-success">Editar</button>
         <button className="btn btn-danger">Excluir</button>
       </div>

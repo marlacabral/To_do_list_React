@@ -10,7 +10,7 @@ const TarefaList = () => {
     getTarefa();
   }, [])
   
-  const url = 'http://localhost:3000/tarefas';
+  const url = 'http://localhost:3001/tarefas';
   const getTarefa = async () => {
     //GET - estou enviando uma requisao get para o backend.
     // response = a resposta que o servidor traz da chamada (carta fechada).
@@ -18,6 +18,8 @@ const TarefaList = () => {
     // data = é o dado que eu recebo apos o ok da promessa do response (conteudo da carta).
     const data = await response.json();
     setTarefas(data);
+    console.log('teste');
+    console.log(data)
   }
 
   return (

@@ -7,12 +7,12 @@ const Home = () => {
   return (
     <section className="content">
 
-      <div className="content-list">
-        <h1>To do List</h1>
-          <TarefaCard />
-          <TarefaList />
-      </div>
 
+      <div className="card">
+        <TarefaList />
+      
+      </div>
+      
       <div className="jake">
         
         <div className="face">
