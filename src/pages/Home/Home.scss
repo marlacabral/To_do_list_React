@@ -1,19 +1,12 @@
 @import '../../styles/_colors.scss';
 @import '../../styles/style.scss';
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 .content {
 @include container;
 display: flex;
 font-weight: bold;
-justify-content: space-around;
+justify-content: center;
 
 }
 
@@ -22,8 +15,7 @@ justify-content: space-around;
   flex-direction: column ;
   align-content:space-between;
   border-radius: 50%;
-  box-shadow: 50% solid red;
-  
+  box-shadow: 50% solid ;
   
 }
     

@@ -3,4 +3,13 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: black;
+    &label{
+    color: black;
+
+  };
+    &input{
+    color: black;
+
+  }
 }

@@ -5,7 +5,6 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import TarefaAdd from './pages/TarefaAdd/TarefaAdd';
 import TarefaView from './pages/TarefaView/TarefaView';
-import TarefaCard from './components/structure/TarefaCard/TarefaCard';
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
           <Route path="/" exact={true} component={Home}/>
           <Route path="/add" component={TarefaAdd}/>
           <Route path="/view/:id" component={TarefaView}/>
-         
         </Switch>
       <Footer/>
     </div>

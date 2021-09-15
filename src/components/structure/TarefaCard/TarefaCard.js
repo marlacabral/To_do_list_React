@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import './TarefaCard.scss';
 import '../../structure/TarefaList/TarefaList';
 
+
 const TarefaCard = (props) => {
   const tarefa = props.tarefa;
 

@@ -18,8 +18,7 @@ const TarefaList = () => {
     // data = é o dado que eu recebo apos o ok da promessa do response (conteudo da carta).
     const data = await response.json();
     setTarefas(data);
-    console.log('teste');
-    console.log(data)
+    
   }
 
   return (

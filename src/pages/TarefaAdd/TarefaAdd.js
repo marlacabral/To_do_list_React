@@ -1,6 +1,6 @@
-import React from 'react'
+import React, {  useState  } from 'react'
 import './TarefaAdd.scss';
-import { Api } from '../../api/api'
+import { Api } from '../../api/api';
 
 const TarefaAdd = () => {
   const handleSubmit = async (evento) => {
@@ -22,36 +22,52 @@ const TarefaAdd = () => {
     const response = await Api.fetchPost(Tarefa);
     const data = await response;
     
-    console.log(data);
-  };
+  }
 
+  
   return (
     <section className="add">
       <form className="add-form" onSubmit={handleSubmit}>
+
         <div className="add-form-group">
-          <label htmlFor="Título" className="add-form-group-label">Título</label>
-          <input type="text" id="Título" name="Título" className="add-form-group-input"/>
+          <p>Título:</p>
+          <input type="text" id="Título" name="Título" placeholder="Digite o título da tarefa" className="add-form-group-input"/>
         </div>
+
         <div className="add-form-group">
-          <label htmlFor="Descrição" className="add-form-group-label">Descrição</label>
-          <input type="text" id="Descrição" name="Descrição" className="add-form-group-input"/>
+          <p>Descrição:</p>
+          <input type="text" id="Descrição" name="Descrição" placeholder="Digite a descrição da tarefa" className="add-form-group-input"/>
         </div>
-        <div className="add-form-group">
-          <label htmlFor="Prioridade" className="add-form-group-label">Prioridade</label>
-          <input type="text" id="Prioridade" name="Prioridade" className="add-form-group-input"/>
+
+        <div className="prioridade">
+          <p>Prioridade:</p>
+          <label className="add-form-group-label">Alta</label>
+          <input type="radio" id="Prioridade" name="Prioridade" className="add-form-group-input"/>
+         
+          <label className="add-form-group-label">Baixa</label>
+          <input type="radio" id="Prioridade" name="Prioridade" className="add-form-group-input"/>
         </div>
-        <div className="add-form-group">
-          <label htmlFor="Status" className="add-form-group-label">Status</label>
-          <input type="checkbox" id="Status" name="Status" className="add-form-group-input"/>
+
+        <div className="status">
+          <p>Status: </p >
+          <label className="add-form-group-label">Pendente</label>
+          <input type="radio" id="Status" name="Status" className="add-form-group-input"/>
+          <label className="add-form-group-label">Andamento</label>
+          <input type="radio" id="Status" name="Status" className="add-form-group-input"/>
+          <label className="add-form-group-label">Concluído</label>
+          <input type="radio" id="Status" name="Status" className="add-form-group-input"/>
+          <div/>
+          
+          <div className="add-form-group">
+      
+          <p>Prazo:</p>
+          <input type="date" id="Prazo" name="Prazo" className="add-form-group-input"/>
         </div>
-        <div className="add-form-group">
-          <label htmlFor="Prazo" className="add-form-group-label">Prazo</label>
-          <input type="checkbox" id="Prazo" name="Prazo" className="add-form-group-input"/>
-        </div>
-       
+               
         <div className="add-form-buttons">
           <button className="add-form-buttons-btn-cancelar">Cancelar</button>
           <button className="add-form-buttons-btn-salvar" type="submit">Enviar</button>
+        </div>
         </div>
       </form>
     </section>
