@@ -2,8 +2,7 @@
 @import '../../../styles/style.scss';
 
 .header {
-  background-color: $color-secondary;
-  color: $color-primary;  
+      
   .container {
     @include container;
   }
@@ -11,17 +10,18 @@
     margin: 0;
     list-style: none;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    justify-items:right;
+    
     &-item {
-      color: $color-primary;
+      color: black;
       padding: 1% 2%;
       text-decoration: none;
       cursor: pointer;
       transition: 0.4s all;
+      font-weight: bold;
 
       &:hover {
-        color: #FFF;
+        color: white;
       }
     }
   }

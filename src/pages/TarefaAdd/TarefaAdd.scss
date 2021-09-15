@@ -20,17 +20,21 @@
 .add {
   @include container;
   height: 100%;
+  
+
+  
   &-form {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     margin-top: 5%;
+    
     &-group {
-      width: 49%;
+      width: 100%;
       display: flex;
-      flex-direction: column;
+      
       justify-content: flex-start;
       &-label {
         color: $color-primary;

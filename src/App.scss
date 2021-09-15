@@ -1,9 +1,8 @@
 
 .App {
   height: 100vh;
-
   display: flex;
-  flex-direction: flex;
-  flex-wrap: wrap;
-  background: linear-gradient(to right, #1c023f, #520288);
+  flex-direction:column;
+  // flex-wrap: wrap;
+  // background: linear-gradient(to right, #03cc5d, #eafdf4);
 }

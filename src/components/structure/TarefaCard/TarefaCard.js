@@ -6,7 +6,7 @@ const TarefaCard = (props) => {
   const tarefa = props.tarefa;
 
   return (
-    <Link to={`/view/${tarefa._id}`} className="card">
+    <Link to={`/view/${tarefa}`} className="card">
       <div>
         <div className="card-img">
           <img src={tarefa.capa} alt="" />
