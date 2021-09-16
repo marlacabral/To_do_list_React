@@ -1,18 +1,15 @@
 import React from 'react';
 import TarefaList from '../../components/structure/TarefaList/TarefaList';
 import './Home.scss';
-import TarefaCard from '../../components/structure/TarefaCard/TarefaCard'
 
 const Home = () => {
   return (
     <section className="content">
 
-
       <div className="card">
-        <TarefaList />
-      
+        <TarefaList />      
       </div>
-      
+      <h1>Lista de Tarefas<br/> do Jake</h1>
       <div className="jake">
         
         <div className="face">
@@ -49,7 +46,9 @@ const Home = () => {
         
       </div> 
     </section>
-  )
+    )
+
+ 
 }
 
 export default Home

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './TarefaView.scss';
+import { Link } from 'react-router-dom';
 import { Api } from '../../api/api'
 
 const TarefaView = (props) => {
@@ -20,19 +21,20 @@ const TarefaView = (props) => {
   
   }
 
+  
+
   return (
     <section className="view">
-      
-      <div className="view-info">
-        <p className="view-info-text"><b>Titulo:</b> { tarefa.titulo }</p>
-        <p className="view-info-text"><b>Descrição:</b> { tarefa.descricao }</p>
-        <p className="view-info-text"><b>Prioridade:</b> { tarefa.prioridade }</p>
-        <p className="view-info-text"><b>Status:</b> { tarefa.status }</p>
-        <p className="view-info-text"><b>Prazo:</b> { tarefa.prazo }</p>
+       
+        <div className="view-info">
+          <p className="view-info-text"><b>Titulo:</b> { tarefa.titulo }</p>
+          <p className="view-info-text"><b>Descrição:</b> { tarefa.descricao }</p>
+          <p className="view-info-text"><b>Prioridade:</b> { tarefa.prioridade }</p>
+          <p className="view-info-text"><b>Status:</b> { tarefa.status }</p>
+          <p className="view-info-text"><b>Prazo:</b> { tarefa.prazo }</p>
+          </div>
         
-        <button className="btn btn-success">Editar</button>
-        <button className="btn btn-danger">Excluir</button>
-      </div>
+              
     </section>
   )
 }

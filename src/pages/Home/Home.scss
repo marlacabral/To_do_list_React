@@ -6,19 +6,20 @@
 @include container;
 display: flex;
 font-weight: bold;
-justify-content: center;
 
 }
 
 .card{
   display: flex;
   flex-direction: column ;
-  align-content:space-between;
+  align-content:space-around;
   border-radius: 50%;
   box-shadow: 50% solid ;
   
 }
-    
+.h1{
+  font-size: 200px;
+}
     
 body {
   background: #f5bf3f;

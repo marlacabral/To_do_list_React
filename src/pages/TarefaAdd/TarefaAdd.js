@@ -30,17 +30,17 @@ const TarefaAdd = () => {
       <form className="add-form" onSubmit={handleSubmit}>
 
         <div className="add-form-group">
-          <p>Título:</p>
+          <p><b>Título:</b></p>
           <input type="text" id="Título" name="Título" placeholder="Digite o título da tarefa" className="add-form-group-input"/>
         </div>
 
         <div className="add-form-group">
-          <p>Descrição:</p>
+          <p><b>Descrição:</b></p>
           <input type="text" id="Descrição" name="Descrição" placeholder="Digite a descrição da tarefa" className="add-form-group-input"/>
         </div>
 
         <div className="prioridade">
-          <p>Prioridade:</p>
+          <p><b>Prioridade:</b></p>
           <label className="add-form-group-label">Alta</label>
           <input type="radio" id="Prioridade" name="Prioridade" className="add-form-group-input"/>
          
@@ -49,7 +49,7 @@ const TarefaAdd = () => {
         </div>
 
         <div className="status">
-          <p>Status: </p >
+          <p><b>Status: </b></p >
           <label className="add-form-group-label">Pendente</label>
           <input type="radio" id="Status" name="Status" className="add-form-group-input"/>
           <label className="add-form-group-label">Andamento</label>
@@ -60,7 +60,7 @@ const TarefaAdd = () => {
           
           <div className="add-form-group">
       
-          <p>Prazo:</p>
+          <p><b>Prazo:</b></p>
           <input type="date" id="Prazo" name="Prazo" className="add-form-group-input"/>
         </div>
                

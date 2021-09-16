@@ -25,11 +25,11 @@
   height: 60%;
   color: black;
   background-color: rgba(252, 193, 32, 0.856);
-  padding: 1rem rem 3rem 3rem;
-  border-radius: 50%;
+  padding: .5rem 0 3rem 0;
+  border-radius: 40%;
   display: block;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   cursor: pointer;  
   transition: 0.3s ease-in-out;
   box-shadoW: #0e0d0d 0px 8px 24px;
@@ -43,14 +43,13 @@
     justify-content:  center space-between;
     align-content: center;
     padding: 2%;
-    margin-left: 35%;
-    margin-top: 7%;
+    margin-left: 30%;
+    margin-top: 3%;
     
     
     &-group {
       display: flex;
       flex-direction: column;
-     
       margin: 1%;
       &-status{
         display: flex;
@@ -71,7 +70,7 @@
       &-input {
         font-size: 18px;
         color: black;
-        padding: .5rem;
+        padding: .4rem;
         border-radius: 20px;
         outline: none;
                 
