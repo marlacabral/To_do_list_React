@@ -1,8 +1,10 @@
 import React, {  useState  } from 'react'
 import './TarefaAdd.scss';
 import { Api } from '../../api/api';
+import { Link } from 'react-router-dom';
+ 
 
-const TarefaAdd = () => {
+const TarefaAdd = (props) => {
   const handleSubmit = async (evento) => {
     evento.preventDefault();
     const titulo = evento.target.titulo.value;
@@ -19,10 +21,18 @@ const TarefaAdd = () => {
       prazo: prazo,
     }
 
-    const response = await Api.fetchPost(Tarefa);
-    const data = await response;
+    try {
+      const response = await Api.fetchPost(Tarefa);
+      const data = await response;
+      console.log(data);
+      props.history.push("/");
+    } catch (error) {
+      console.log(error);
+    }
+  
+
     
-  }
+  };
 
   
   return (
@@ -65,8 +75,11 @@ const TarefaAdd = () => {
         </div>
                
         <div className="add-form-buttons">
+          < Link to="/" >
           <button className="add-form-buttons-btn-cancelar">Cancelar</button>
-          <button className="add-form-buttons-btn-salvar" type="submit">Enviar</button>
+          </ Link>
+
+          <button className="add-form-buttons-btn-enviar" type="submit">Enviar</button>
         </div>
         </div>
       </form>

@@ -10,7 +10,7 @@ const TarefaCard = (props) => {
   return (
     <Link to={`/view/${tarefa._id}`} className="card">
       <div>
-        <p className="card-text">{tarefa.nome}</p>
+        <p className="card-text">{tarefa.titulo}</p>
         <span className="card-info">{tarefa.descricao}</span>
       </div>
     </Link>
